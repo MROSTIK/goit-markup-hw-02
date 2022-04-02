@@ -43,7 +43,11 @@ ul {
 .contacts-nav .phone, .contacts-nav .mail-porfolio {
   color: var(--primary-text-color);
 }
-.site-nav .link-current:hover, .site-nav .link-current:focus, .contacts-nav .mail:hover, .contacts-nav .mail:focus, .contacts-nav .phone:hover, .contacts-nav .phone:focus, .contacts-nav .mail-porfolio:hover, .contacts-nav .mail-porfolio:focus {
+.site-nav .link-current:hover, .site-nav .link-current:focus, 
+.contacts-nav .mail:hover, .contacts-nav .mail:focus, 
+.contacts-nav .phone:hover, .contacts-nav .phone:focus, 
+.contacts-nav .mail-porfolio:hover, 
+.contacts-nav .mail-porfolio:focus {
   color: #000000;
 }
 /* Section-1 (Hero) */
@@ -70,6 +74,8 @@ ul {
   color: var(--primary-bg-color);
   background-color: var(--accent-color);
   cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 /* Наши проекты */
 .filter .filter-button {
@@ -81,10 +87,13 @@ line-height: 1.63;
 text-align: center;
 letter-spacing: 0.03em;
 color: var(--title-text-color);
-border-color: transparent;
+background-color: #F5F4FA;
 cursor: pointer;
+border-radius: 4px;
+border: none;
 }
-.filter .filter-button.primary {
+.filter .filter-button:hover,
+.filter .filter-button:focus {
   color: var(--primary-bg-color);
   background-color: var(--accent-color);
 }
