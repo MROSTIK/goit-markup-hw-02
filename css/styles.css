@@ -3,11 +3,17 @@
   --title-text-color: #212121;
   --accent-color: #2196F3;
   --primary-bg-color: #FFFFFF;
+  --primary-address-mail-phone-color: rgba(255, 255, 255, 0.6);
+  --primary-filter-button-bg-color: #F5F4FA;
+  --primary-hover-focus-color: #000000;
+  --primary-footer-bg-color: #2F303A;
 }
 body {
 font-family: Roboto,Verdana,Geneva,Tahoma,sans-serif;
-font-style: normal;
+font-size: 14px;
 color: var(--primary-text-color);
+letter-spacing: 0.03em;
+background-color: #FFFFFF;
 }
 a {
   text-decoration: none;
@@ -21,7 +27,6 @@ ul {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
   color: var(--accent-color);
 }
 .logo-black {
@@ -48,11 +53,11 @@ ul {
 .contacts-nav .phone:hover, .contacts-nav .phone:focus, 
 .contacts-nav .mail-porfolio:hover, 
 .contacts-nav .mail-porfolio:focus {
-  color: #000000;
+  color: var(--primary-hover-focus-color);
 }
 /* Section-1 (Hero) */
 .hero {
-  background-color: #2F303A;
+  background-color: var(--primary-footer-bg-color);
 }
 .hero-title {
   font-weight: 900;
@@ -74,7 +79,6 @@ ul {
   color: var(--primary-bg-color);
   background-color: var(--accent-color);
   cursor: pointer;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
 /* Наши проекты */
@@ -87,7 +91,7 @@ line-height: 1.63;
 text-align: center;
 letter-spacing: 0.03em;
 color: var(--title-text-color);
-background-color: #F5F4FA;
+background-color: var(--primary-filter-button-bg-color);
 cursor: pointer;
 border-radius: 4px;
 border: none;
@@ -113,21 +117,18 @@ border: none;
 /* Section-2 */
 /* Сильные стороны Студии */
 .hidden-title {
-  color: var(--primary-bg-color);
+  display: none;
 }
 .benefits .title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-text-color);
 }
 .benefits .section-text {
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
-}
+  }
 /* Section-3 */
 /* Чем мы занимаемся, Наша команда (h2) */
 .section-title {
@@ -135,31 +136,28 @@ border: none;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
 /* Section-3 */
 /* Наша команда */
 .section-crew {
-  background-color: #F5F4FA;
+  background-color: var(--primary-filter-button-bg-color);
 }
 .crew .title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
 .crew .section-text {
   font-size: 16px;
   line-height: 1.19;
-   text-align: center;
-  letter-spacing: 0.03em;
-}
+  text-align: center;
+  }
 /* Footer */
 .footer {
-  background-color: #2F303A;
+  background-color: var(--primary-footer-bg-color);
 }
 .logo-white {
   inherits: logo;
@@ -176,7 +174,7 @@ border: none;
   color: var(--primary-bg-color);
 }
 .address .mail, .address .phone {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--primary-address-mail-phone-color);
 }
 .address .location:hover,.address .location:focus,
 .address .mail:hover,.address .phone:focus,
